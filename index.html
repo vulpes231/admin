@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="container">
+       <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./img/people03.png" alt="">
+                    <h2>
+                        HORI<span class="warning">ZON</span>
+                    </h2>
+                </div>
+                <div id="close-btn" class="close">
+                    <span class="material-symbols-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <a href="">
+                    <span class="material-symbols-sharp">
+                        account_balance
+                    </span>
+                    <h3>Accounts</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-sharp">
+                        move_up
+                    </span>
+                    <h3>Move Money</h3>
+                </a>
+                <a href="" class="active">
+                    <span class="material-symbols-sharp">
+                        mail
+                    </span>
+                    <h3>Messages</h3>
+                    <span class="count">12</span>
+                </a>
+                <a href="">
+                    <span class="material-symbols-sharp">
+                        analytics
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+       </aside>
+       <!-- end of sidebar -->
+       <main>
+
+        <h1> Accounts </h1>
+
+        <div class="date">
+            <input type="date" >
+        </div>
+        <!--  -->
+        <div class="insights">
+            <div class="checking">
+                <span class="material-symbols-sharp">
+                    wallet
+                </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>CHECKINGS ..0786</h3>
+                        <h1>$162,140.00</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy ="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>85%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted">Current $0.00</small>
+            </div>
+            <!--  -->
+            <div class="savings">
+                <span class="material-symbols-sharp">
+                    savings
+                </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>SAVINGS ..0462</h3>
+                        <h1>$24,000.00</h1>
+                       
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy ="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>14%</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <small class="text-muted">Current $0.00</small>
+            </div>
+            <!--  -->
+            <div class="loan">
+                <span class="material-symbols-sharp">
+                    real_estate_agent
+                </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>LOANS ..2291</h3>
+                        <h1>$10,300.00</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy ="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>68%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted">Current $24,500.00</small>
+            </div>
+        </div>
+        <div class="transactions">
+            <h2>Recent Transactions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>16 Dec 2022</td>
+                        <td>Web Billpayment - MASTERCARD</td>
+                        <td class="danger">$1,400.34</td>
+                        <td></td>
+                        <td>$156,640.00</td>
+                    </tr>
+                    <tr>
+                        <td>23 Dec 2022</td>
+                        <td>Payroll Deposit</td>
+                        <td></td>
+                        <td class="success">$5,500.00</td>
+                        <td>$162,140.00</td>
+                    </tr>
+                    <tr>
+                        <td>30 Dec 2022</td>
+                        <td>Pre-Auth.- Insurance</td>
+                        <td class="danger">$450.00</td>
+                        <td></td>
+                        <td>$161,690.00</td>
+                    </tr>
+                    <tr>
+                        <td>03 Jan 2023</td>
+                        <td>Check No. 4523</td>
+                        <td class="danger">$1480.00</td>
+                        <td></td>
+                        <td>$160,210.00</td>
+                    </tr>
+                    <tr>
+                        <td>05 Jan 2023</td>
+                        <td>External Transfer</td>
+                        <td class="danger">$14,900.50</td>
+                        <td></td>
+                        <td>$145,309.50</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="">show more..</a>
+           </div>
+       </main>
+       <!-- end of accounts -->
+       <div class="right">
+            <div class="top">
+                <button id="menu">
+                    <span class="material-symbols-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="toggle">
+                    <span class="material-symbols-sharp active">
+                        clear_day
+                    </span>
+                    <span class="material-symbols-sharp">
+                        dark_mode
+                    </span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Welcome, <b>User</b></p>
+                        <small class="text-muted">Settings</small>
+                    </div>
+                </div>
+            </div>
+            <!-- end of topbar -->
+            <div class="quick">
+                <h2>Quick Links</h2>
+                <div class="links">
+                    <p><a href="" class="info-dark">Pay Bills</a></p>
+                    <p><a href="" class="info-dark">Pay Loans</a></p>
+                    <p><a href="" class="info-dark">Account Alerts</a></p>
+                    <p><a href="" class="info-dark">Manage Contact Information</a></p>
+                    <p><a href="" class="info-dark">View Statement</a></p>
+                </div>
+            </div>
+            <div class="quick">
+                <h2>Offers for your account</h2>
+                <div class="links">
+                    <p>No offers currently.</p>
+                </div>
+            </div>
+       </div>
+      
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
